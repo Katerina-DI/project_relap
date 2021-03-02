@@ -1,0 +1,29 @@
+@import './fonts.scss';
+@import './constants.scss';
+@import './mixins.scss';
+@import './nav.scss';
+
+.home-section {
+    position: relative;
+    background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+    height: 100%;
+    padding-bottom: 160px;
+    .home-section__phones img {
+        position: absolute;
+        left: 6%;
+        top: -7.21%;
+    }
+    
+    .container {
+        width: 85%;
+        margin: 0 auto;
+        .home-section__info {
+            @include flex-column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+  
+    }
+    
+
+}
