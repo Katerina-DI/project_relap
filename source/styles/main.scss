@@ -3,11 +3,12 @@
 @import './mixins.scss';
 @import './nav.scss';
 
+
 .home-section {
     position: relative;
     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
-    height: 100%;
     padding-bottom: 160px;
+    background-position: center;
     .home-section__phones img {
         position: absolute;
         left: 6%;
@@ -21,6 +22,28 @@
             @include flex-column;
             justify-content: center;
             align-items: flex-start;
+            margin-top: 156px;
+            b {
+                font-size: 72px;
+                line-height: 72px;
+                color: $white;
+                font-family: $primaryFontBold;
+                margin-bottom: 26px;
+                width: 30%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $primaryFontMedium;
+                color: $white;
+                width: 45%;
+            }
+            .btn.btn-primary {
+                @include button;
+                background: #FFC300;
+                margin-top: 34px;
+            }
+            
         }
   
     }
