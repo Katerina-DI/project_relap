@@ -2,6 +2,7 @@
 @import './constants.scss';
 @import './mixins.scss';
 @import './nav.scss';
+@import './pleasures.scss';
 
 
 .home-section {
@@ -13,6 +14,9 @@
         position: absolute;
         left: 6%;
         top: -7.21%;
+        
+        // @media
+        // transform: scale();
     }
     
     .container {
@@ -27,14 +31,12 @@
                 font-size: 72px;
                 line-height: 72px;
                 color: $white;
-                font-family: $primaryFontBold;
                 margin-bottom: 26px;
                 width: 30%;
             }
             p {
                 font-size: 16px;
                 line-height: 24px;
-                font-family: $primaryFontMedium;
                 color: $white;
                 width: 45%;
             }
@@ -42,6 +44,11 @@
                 @include button;
                 background: #FFC300;
                 margin-top: 34px;
+                padding: 12px 47px;
+            }
+            .btn.btn-primary:hover {
+                background-color: #C86DD7;
+                border: orange;
             }
             
         }
@@ -59,13 +66,13 @@
             font-size: 56px;
             line-height: 64px;
             color: $black;
-            font-family: $primaryFontBold;
+            
         }
         p {
             font-size: 16px;
             line-height: 24px;
             color: $black;
-            font-family: $primaryFontMedium;
+            
             width: 40%;
             text-align: center;
             padding: 23px 0 32px;
@@ -94,7 +101,7 @@
             h4 {
                 font-size: 24px;
                 line-height: 32px;
-                font-family: $primaryFontBold;
+                
                 color: $black;
                 text-align: center;
             }
@@ -102,7 +109,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 opacity: 0.5;
-                font-family: $primaryFontMedium;
+                
                 color: $black;
                 text-align: center;
                 padding-bottom: 32px;
