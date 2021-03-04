@@ -1,0 +1,57 @@
+.free-time {
+    @include flex-row;
+    align-items: space-between;
+    margin: 0;
+    .free-time__descr {
+       
+        padding: 103px 80px 0 0;
+        b {
+            font-size: 56px;
+            line-height: 64px;
+            color: $black;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: $black;
+            margin: 23px 0 54px;
+            width: 85%;
+        }
+        .free-time__item {
+            
+            display: flex;
+            flex-wrap: wrap;
+            .free-time-old,
+            .free-time-pleasure,
+            .free-time-recipe,
+            .free-time-pain {
+                @include flex-column;
+                margin-right: 30px;
+                width: 43%;
+            
+                b {
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: $black;
+                    margin-bottom: 9px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    opacity: 0.5;
+                    margin: 0 0 32px; 
+                }
+                img {
+                    width: 50px;
+                    height: 46px;
+                }
+            }
+            
+
+        }
+    }
+    .free-time__phone {
+        
+        padding-left: 80px;
+    }
+}
