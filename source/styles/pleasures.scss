@@ -1,5 +1,5 @@
 .rejects-pleasures {
-    background: #FDF2FF;
+    background: $lightBeige;
     padding: 144px 0 112px;
     margin: 0;
     .container {
@@ -65,9 +65,9 @@
             }
             .btn.btn-primary {
                 @include button;
-                background: #C86DD7;
-                border-color:  #c86dd7 ;
-                padding: 12px 54px;
+                background:$puple;
+                border-color: $puple ;
+               
                 width: 30%;
                 margin-bottom: 32px;
             }

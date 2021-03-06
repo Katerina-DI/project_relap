@@ -1,0 +1,83 @@
+.price {
+    margin: 0;
+    background: $lightBeige;
+    padding: 55px 0 112px;
+    .price__descr {
+        @include flex-column;
+        align-items: center;
+        b {
+            font-size: 56px;
+            line-height: 64px;
+            color: $black;
+            
+        }
+        p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 24px;
+            color: $black;
+            padding: 23px 0 48px;
+            width: 47%;
+            text-align: center;
+            
+        }
+    }
+    .price-item {
+        @include flex-row;
+        justify-content: center;
+        .wine,
+        .other,
+        .difference {
+            margin: 0;
+            background: $white;
+            box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+            border-radius: 3px;
+            margin-right: 30px;
+            @include flex-column;
+            align-items: center;
+            padding: 53px 100px 48px;
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+                color: $black;
+            }
+            b {
+                font-size: 72px;
+                line-height: 72px;
+                color: $black;
+                margin: 7px 0 26px;
+            }
+            li {
+                font-size: 16px;
+                line-height: 24px;
+                color: $black;
+                opacity: 0.5;
+                text-align: center;
+                list-style-type: none;
+            }
+            .btn.btn-primary {
+                @include button;
+                background-color: $white;
+                color: $puple;
+                border: 1px solid #C86DD7;
+
+            }
+        }
+        .difference {
+            background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+            li {
+                color: $white;
+                opacity: 0.5;
+            }
+            .btn.btn-primary {
+                background-color: #FFC300;
+                color: $white;
+                border: none;
+            }
+        }
+        .other {
+            margin: 0;
+        }
+    }
+    
+}
