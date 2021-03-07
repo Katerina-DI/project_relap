@@ -134,3 +134,44 @@
     background: #C86DD7;
     padding: 5px 0 160px;
 }
+.events {
+    background: $lightBeige;
+    padding: 55px 0 96px;
+    b {
+        font-size: 56px;
+        line-height: 64px;
+        color: $black;
+    }
+    .events-card {
+        @include flex-row;
+        
+        .card {
+            margin: 57px 15px 0 15px;
+            
+            padding: 0;
+            .card-body {
+                margin: 32px 32px 50px 32px;
+                h5 {
+                    font-size: 12px;
+                    line-height: 24px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    color: $black;
+                }
+                b {
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: $black; 
+                    padding-top: 13px;             
+
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $black; 
+                    opacity: 0.5;
+                    padding-top: 25px;
+                }
+            }
+        }
+    }
+}
