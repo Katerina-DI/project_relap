@@ -25,9 +25,11 @@
     .price-item {
         @include flex-row;
         justify-content: center;
+        
         .wine,
         .other,
         .difference {
+            transition: 1s;
             margin: 0;
             background: $white;
             box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
@@ -56,6 +58,7 @@
                 list-style-type: none;
             }
             .btn.btn-primary {
+               
                 @include button;
                 background-color: $white;
                 color: $purple;
@@ -63,8 +66,18 @@
 
             }
         }
-        .difference {
+        .wine:hover,
+        .other:hover,
+        .difference:hover {
+            
             background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+           
+            h4 {
+                color: $white;
+            }
+            b {
+                color: $white;
+            }
             li {
                 color: $white;
                 opacity: 0.5;
