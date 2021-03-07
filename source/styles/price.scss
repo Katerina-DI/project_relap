@@ -58,8 +58,8 @@
             .btn.btn-primary {
                 @include button;
                 background-color: $white;
-                color: $puple;
-                border: 1px solid #C86DD7;
+                color: $purple;
+                border: 1px solid $purple;
 
             }
         }

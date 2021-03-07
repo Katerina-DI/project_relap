@@ -1,0 +1,59 @@
+.idea-pleasure {
+    background-color: $lightBeige;
+    padding: 63px 0 112px;
+    .idea-pleasure__descr {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: start;
+        b {
+            font-size: 56px;
+            line-height: 64px;
+            color: $black;
+            margin-bottom: 65px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            opacity: 0.5;
+            color: $black;
+            margin: 0;
+            padding-top: 15px;
+            width: 31%;
+        }
+        .btn.btn-primary {
+            @include button;
+            background: $white;
+            border: 1px solid $purple;
+            box-sizing: border-box;
+            color: $purple;
+            margin-top: 17px;
+        }
+    }
+    &__art {
+        @include flex-row;
+        justify-content: space-between;
+        height: 464px;
+        .idea-pleasure__artRose {
+            background-image: url(../img/rose.png);
+            width: 44%;
+           @include artIdea;
+        }
+        .idea-pleasure__artGlass {
+            background-image: url(../img/glass.png);
+            width: 21%;
+            @include artIdea;
+            b {
+                width: 70%;
+            }
+        }
+        .idea-pleasure__artPencil {
+            background-image: url(../img/pencil.png);
+            width: 21%;
+            @include artIdea;
+            b {
+                width: 70%;
+            }
+        }
+        
+    }
+}

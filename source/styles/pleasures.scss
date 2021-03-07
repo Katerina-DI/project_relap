@@ -3,6 +3,8 @@
     padding: 144px 0 112px;
     margin: 0;
     .container {
+        width: 85%;
+        margin: 0 auto;
         @include flex-row;
         .lips-art {
             position: relative;
@@ -65,8 +67,8 @@
             }
             .btn.btn-primary {
                 @include button;
-                background:$puple;
-                border-color: $puple ;
+                background:$purple;
+                border-color: $purple ;
                
                 width: 30%;
                 margin-bottom: 32px;

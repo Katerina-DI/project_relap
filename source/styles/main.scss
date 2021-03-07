@@ -5,7 +5,13 @@
 @import './pleasures.scss';
 @import './free-time.scss';
 @import './price.scss';
+@import './carousel.scss';
+@import './idea.scss';
 
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
 .home-section {
     position: relative;
     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
@@ -60,62 +66,70 @@
 }
 .choise-section {
     margin: 55px 0 64px;
-    .choise-descr {
-        @include flex-column;
-        align-items: center;
-        h2 {
-            font-size: 56px;
-            line-height: 64px;
-            color: $black;
-            
-        }
-        p {
-            font-size: 16px;
-            line-height: 24px;
-            color: $black;
-            
-            width: 40%;
-            text-align: center;
-            padding: 23px 0 32px;
-        }
-    }
-    .choiseItem {
-        display: flex;
-        flex-wrap: wrap;
-        .choiseItem-folow ,
-        .choiseItem-pleasure ,
-        .choiseItem-characteristic ,
-        .choiseItem-something ,
-        .choiseItem-cupidatat ,
-        .choiseItem-promises {
+    .container {
+        width: 85%;
+        margin: 0 auto;
+        .choise-descr {
             @include flex-column;
-            justify-content: center;
             align-items: center;
-            background: #FFFFFF;
-            box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
-            border-radius: 3px;
-            margin: 0 15px 32px;
-            width: 30%;
-            img {
-                padding: 40px 162px 11px;
-            }
-            h4 {
-                font-size: 24px;
-                line-height: 32px;
-                
+            h2 {
+                font-size: 56px;
+                line-height: 64px;
                 color: $black;
-                text-align: center;
+                
             }
             p {
                 font-size: 16px;
                 line-height: 24px;
-                opacity: 0.5;
-                
                 color: $black;
+                
+                width: 40%;
                 text-align: center;
-                padding-bottom: 32px;
-                width: 70%;
+                padding: 23px 0 32px;
             }
         }
-    }
+        .choiseItem {
+            display: flex;
+            flex-wrap: wrap;
+            .choiseItem-folow ,
+            .choiseItem-pleasure ,
+            .choiseItem-characteristic ,
+            .choiseItem-something ,
+            .choiseItem-cupidatat ,
+            .choiseItem-promises {
+                @include flex-column;
+                justify-content: center;
+                align-items: center;
+                background: #FFFFFF;
+                box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+                border-radius: 3px;
+                margin: 0 15px 32px;
+                width: 30%;
+                img {
+                    padding: 40px 162px 11px;
+                }
+                h4 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    
+                    color: $black;
+                    text-align: center;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    opacity: 0.5;
+                    
+                    color: $black;
+                    text-align: center;
+                    padding-bottom: 32px;
+                    width: 70%;
+                }
+            }
+        }  
+    } 
+}
+.autors {
+    background: #C86DD7;
+    padding: 5px 0 160px;
 }
