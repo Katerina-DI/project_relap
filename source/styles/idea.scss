@@ -29,6 +29,11 @@
             color: $purple;
             margin-top: 17px;
         }
+        .btn.btn-primary:hover {
+            color: $white;
+            transition: 1s;
+            background: #FFC300;
+        }
     }
     &__art {
         @include flex-row;

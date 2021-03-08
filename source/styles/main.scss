@@ -8,6 +8,7 @@
 @import './carousel.scss';
 @import './idea.scss';
 @import './contact_us.scss';
+@import './information.scss';
 
 .container {
     width: 85%;
@@ -55,8 +56,9 @@
                 padding: 12px 47px;
             }
             .btn.btn-primary:hover {
-                background-color: #C86DD7;
-                border: orange;
+                transition: 1s;
+                background: #FFC300;
+              
             }
             
         }

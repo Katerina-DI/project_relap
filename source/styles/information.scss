@@ -1,0 +1,117 @@
+.information {
+    @include flex-row;
+    padding: 96px 0 112px;
+    .contacts {
+        flex: 1;
+        @include flex-column;
+        justify-content: space-between;
+        
+        h2 {
+            font-size: 56px;
+            line-height: 64px;
+            color: $black;
+            padding-bottom: 39px;
+        }
+        h4 {
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Source Sans Pro', sans-serif;
+            opacity: 0.5;
+            padding-bottom: 23px;
+            width: 80%;
+        }
+        b {
+            font-size: 24px;
+            line-height: 32px;
+            color: $black;
+            padding-bottom: 25px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Source Sans Pro', sans-serif;
+            // padding: 25px 0 23px;
+            opacity: 0.5;
+            padding-bottom: 39px;
+        }
+        .social-network {
+            a {
+                padding-top: 11px;
+                padding-right: 8px;
+            }
+        }
+        
+    }
+    .message__form {
+        flex: 1;
+        @include flex-column;
+        justify-content: space-between;
+        background: $white;
+        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+        border-radius: 3px;
+        padding: 37px 32px 48px;
+        h4 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            color: $black;
+            margin-bottom: 31px;
+        }
+        b {
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $black;
+            margin-bottom: 13px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        input {
+            background: $white;
+            border: 1px solid #DADADA;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            height: 48px;
+            outline: none;
+            &::placeholder {
+                font-size: 16px;
+                line-height: 24px;
+                opacity: 0.5;
+                color: $black;
+                padding: 12px 0 12px 16px;
+                  
+            } 
+        }
+        
+        textarea {
+            background: #FFFFFF;
+            border: 1px solid #DADADA;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-bottom: 32px;
+            outline: none;
+            overflow: auto;
+            &::placeholder {
+                font-size: 16px;
+                line-height: 24px;
+                opacity: 0.5;
+                color: $black;
+                padding: 12px 0 12px 16px;
+            }
+        
+        }
+        input:focus::placeholder,
+        textarea:focus::placeholder {
+            opacity: 0; 
+        }
+        
+        .btn.btn-primary {
+            @include button;
+            background: $purple;
+        }
+        .btn.btn-primary:hover {
+            transition: 1s;
+            background: #FFC300;
+          }
+    }
+}

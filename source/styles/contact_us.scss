@@ -66,6 +66,10 @@
                 background:$purple;
                 border-color: $purple;
             }
+            .btn.btn-primary:hover {
+                transition: 1s;
+                background: #FFC300;
+            }
 
         }
         p {

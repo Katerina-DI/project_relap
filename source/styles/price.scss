@@ -65,6 +65,10 @@
                 border: 1px solid $purple;
 
             }
+            .btn.btn-primary:hover {
+                transition: 1s;
+                background: #FFC300;
+            }
         }
         .wine:hover,
         .other:hover,
@@ -87,6 +91,7 @@
                 color: $white;
                 border: none;
             }
+            
         }
         .other {
             margin: 0;

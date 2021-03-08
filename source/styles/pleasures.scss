@@ -73,6 +73,10 @@
                 width: 30%;
                 margin-bottom: 32px;
             }
+            .btn.btn-primary:hover {
+                transition: 1s;
+                background: #FFC300;
+            }
         }
     }
 } 
