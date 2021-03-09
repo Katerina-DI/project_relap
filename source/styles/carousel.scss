@@ -23,6 +23,7 @@
     }
     .autors__carousel {
         @include flex-row;
+        margin-bottom: 48px;
         .card-man,
         .card-oldman {
             padding: 48px 0 59px;
@@ -65,6 +66,21 @@
             }
             b {
                 color: $black;
+            }
+        }
+    }
+    .autors__button {
+        @include flex-row;
+        justify-content: center;
+        .btn.btn-primary {
+            border: 1px solid #C86DD7;
+            box-sizing: border-box;
+            border-radius: 50px;
+            background: $white;
+            
+            img {
+                padding: 16px;
+                
             }
         }
     }
