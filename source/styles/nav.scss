@@ -2,7 +2,8 @@
     @include flex-row;
     justify-content: space-between;
     background: #5A27A4;
-
+    position: absolute;
+    z-index: 3;
     opacity: 0.8;
     padding-top: 17px;
 }
@@ -11,12 +12,15 @@
         line-height: 48px;
         
         color: $white;
-
+        @media (max-width: $lg) {
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
     .navbar-topnav {
         @include flex-row;
         &__links {
-            margin-right: 56px;
+            margin-right: 31px;
         }
         &__links a {
             font-size: 16px;
@@ -25,10 +29,25 @@
             color: $white;
             padding:  0 25px;
             text-decoration: none;
+            @media (max-width: $lg) {
+                font-size: 12px;
+                line-height: 22px;
+            }
+            @media (max-width: $md) {
+                display: none;
+            }
         }
         &__points {
             a {
+                
                 padding: 0 16px;
+                img{
+                    @media (max-width: $md) {
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+                
             }
         }
     }

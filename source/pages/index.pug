@@ -53,20 +53,21 @@ html(lang="en")
                         p Odio dignissimos ducimus qui blanditiis praesentium voluptatum
         section.rejects-pleasures
             .container 
-                .lips-art 
-                    img(src="../img/lip.png", alt="")
-                .rejects-pleasures__descr
-                    b Reiciendis voluptatibus
-                    h4 Nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                    p Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                    .rejects-pleasures__item
-                        .percent
-                            b 42%
-                            p Alias consequatur
-                        .quantity
-                            b +73
-                            p Perferendis doloribus
-                    button.btn.btn-primary Features
+                .rejects-pleasures__info
+                    .lips-art 
+                        img(src="../img/lip.png", alt="")
+                    .rejects-pleasures__descr
+                        b Reiciendis voluptatibus
+                        h4 Nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        p Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        .rejects-pleasures__item
+                            .percent
+                                b 42%
+                                p Alias consequatur
+                            .quantity
+                                b +73
+                                p Perferendis doloribus
+                        button.btn.btn-primary Features
         
         section.free-time.container 
             .free-time__descr 
@@ -128,7 +129,21 @@ html(lang="en")
                 b Eaque ipsa
                 p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
             .autors__carousel
-                include carousel.html
+                .card-man 
+                    img(src="../img/man.png", alt="man")
+                    p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                    b Vikentiy Chaykovsky
+                
+                .card-oldman 
+                    img(src="../img/oldman.png", alt="")
+                    p "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                    b Richardo Kann
+            .autors__button 
+                button.btn.btn-primary
+                    img(src="../img/Path-left.svg", alt="path") 
+                button.btn.btn-primary
+                    img(src="../img/Path-right.svg", alt="path")
+    
         section.idea-pleasure 
             .container 
                 .idea-pleasure__descr 
@@ -203,7 +218,7 @@ html(lang="en")
                 b Your email
                 input(type="text" placeholder="Email") 
                 b Your message 
-                textarea(name="message" cols="30" rows="10" placeholder="Message")
+                textarea(name="message" cols="20" rows="5" placeholder="Message")
 
                 button.btn.btn-primary Send            
 

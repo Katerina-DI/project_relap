@@ -1,16 +1,31 @@
 .information {
     @include flex-row;
     padding: 96px 0 112px;
+    @media (max-width: $md) {
+        padding: 54px 0 48px;
+        @include flex-column;
+ 
+     }
     .contacts {
         flex: 1;
         @include flex-column;
         justify-content: space-between;
+        @media (max-width: $md) {
+            margin-bottom: 64px;
+         }
         
         h2 {
             font-size: 56px;
             line-height: 64px;
             color: $black;
             padding-bottom: 39px;
+            font-weight: bold;
+            @media (max-width: $sm) {
+                font-size: 40px;
+                line-height: 48px;
+         
+            }
+            
         }
         h4 {
             font-size: 16px;
@@ -19,6 +34,10 @@
             opacity: 0.5;
             padding-bottom: 23px;
             width: 80%;
+            @media (max-width: $sm) {
+                width: 100%;
+         
+            }
         }
         b {
             font-size: 24px;

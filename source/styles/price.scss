@@ -2,6 +2,10 @@
     margin: 0;
     background: $lightBeige;
     padding: 55px 0 112px;
+    @media (max-width: $md) {
+        padding: 55px 0 80px;
+
+    }
     .price__descr {
         @include flex-column;
         align-items: center;
@@ -9,6 +13,11 @@
             font-size: 56px;
             line-height: 64px;
             color: $black;
+            @media (max-width: $md) {
+                font-size: 40px;
+                line-height: 48px;
+        
+            }
             
         }
         p {
@@ -19,18 +28,25 @@
             padding: 23px 0 48px;
             width: 47%;
             text-align: center;
-            
+            @media (max-width: $sm) {
+                width: 100%;
+        
+            }
         }
     }
     .price-item {
         @include flex-row;
         justify-content: center;
+        @media (max-width: $lg) {
+            @include flex-column;
+            align-items: center;
+        }
         
         .wine,
         .other,
         .difference {
             transition: 1s;
-            margin: 0;
+           
             background: $white;
             box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
             border-radius: 3px;
@@ -38,10 +54,25 @@
             @include flex-column;
             align-items: center;
             padding: 53px 100px 48px;
+            @media (max-width: $lg) {
+                width: 50%;
+                margin-bottom: 16px;
+            }
+            @media (max-width: $sm) {
+                width: 70%;
+                
+            }
+            @media (max-width: $xs) {
+                width: 100%;
+                margin-right: 0;
+                
+            }
             h4 {
                 font-size: 24px;
                 line-height: 32px;
                 color: $black;
+                font-weight: bold;
+
             }
             b {
                 font-size: 72px;
@@ -95,6 +126,13 @@
         }
         .other {
             margin: 0;
+            @media (max-width: $lg) {
+                margin-right: 30px;
+            }
+            @media (max-width: $xs) {
+                margin-right: 0;
+            }
+            
         }
     }
     
