@@ -5,7 +5,8 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./styles/main.css")
-        link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap', rel='stylesheet')
+
         link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl", crossorigin="anonymous")
         title RELAP 
     body 
@@ -127,7 +128,16 @@ html(lang="en")
                 b Eaque ipsa
                 p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
             .autors__carousel
-                include carousel.html
+                .card-man 
+                    img(src="../img/man.png", alt="man")
+                    p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                    b Vikentiy Chaykovsky
+                
+                .card-oldman 
+                    img(src="../img/oldman.png", alt="")
+                    p "Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                    b Richardo Kann
+    
         section.idea-pleasure 
             .container 
                 .idea-pleasure__descr 
