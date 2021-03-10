@@ -4,15 +4,25 @@
     @media (max-width: $md) {
         padding: 54px 0 64px;
     }
+    
     .idea-pleasure__descr {
         @include flex-row;
         justify-content: space-between;
         align-items: start;
+        @media (max-width: $sm) {
+            @include flex-column;
+            margin-left: 32px;
+        }
         b {
             font-size: 56px;
             line-height: 64px;
             color: $black;
             margin-bottom: 65px;
+            @media (max-width: $sm) {
+                font-size: 40px;
+                line-height: 48px;
+                margin-bottom: 24px;
+            }
         }
         p {
             font-size: 16px;
@@ -23,6 +33,9 @@
             padding-top: 15px;
             width: 31%;
             font-family: 'Source Sans Pro', sans-serif;
+            @media (max-width: $sm) {
+                width: 100%;
+            }
         }
         .btn.btn-primary {
             @include button;
@@ -31,6 +44,7 @@
             box-sizing: border-box;
             color: $purple;
             margin-top: 17px;
+            margin-bottom: 64px;
         }
         .btn.btn-primary:hover {
             color: $white;
@@ -41,33 +55,73 @@
     &__art {
         @include flex-row;
         justify-content: space-between;
-        height: 464px;
-        @media (max-width: $md) {
+        @media (max-width: $sm) {
            @include flex-column;
-           align-items: center;
+        //    margin-bottom: 16px;
         }
         .idea-pleasure__artRose {
             background-image: url(../img/rose.png);
+            background-position: center;
             width: 44%;
-           @include artIdea;
+            @include artIdea;
+            background-repeat: no-repeat;
+            padding: 276px 0 40px 32px;
+            @media (max-width: $md) {
+                margin-bottom: 16px;
+            }
+            @media (max-width: $sm) {
+                width: 39%;
+            }
+            @media (max-width: $xs){
+                width: 77%;
+                padding: 276px 0 40px 32px;
+                margin-left: 40px;
+            }
+            b {
+                width: 60%;
+                
+            }
            
         }
         .idea-pleasure__artGlass {
             background-image: url(../img/glass.png);
+            background-position: center;
             width: 21%;
             @include artIdea;
-            b {
-                width: 70%;
+            background-repeat: no-repeat;
+            @media (max-width: $md) {
+                margin-bottom: 16px;
+            }
+            @media (max-width: $sm) {
+                width: 39%;
+            }
+            @media (max-width: $xs){
+                width: 100%;
+                padding: 325px 0 40px 64px;
             }
         }
         .idea-pleasure__artPencil {
             background-image: url(../img/pencil.png);
+            background-position: center;
             width: 21%;
             @include artIdea;
+            background-repeat: no-repeat;
+            @media (max-width: $md) {
+                margin-bottom: 16px;
+            }
+            @media (max-width: $sm) {
+                width: 39%;
+            }
+            @media (max-width: $xs){
+                width: 100%;
+                padding: 325px 0 40px 64px;
+            }
             b {
-                width: 70%;
+                @media (max-width: $xs) {
+                    width: 70%;
+                }
             }
         }
         
     }
-}
+    }

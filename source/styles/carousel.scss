@@ -27,6 +27,9 @@
             padding: 23px 0 48px;
             text-align: center;
             width: 50%;
+            @media (max-width: $sm) {
+                width: 100%;
+            }
         }
     }
     .autors__carousel {
