@@ -43,7 +43,7 @@
             justify-content: center;
             align-items: center;
             margin-right: 30px;
-            background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+            background: $white;
             box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
             border-radius: 3px;
             @media (max-width: $sm) {
@@ -57,7 +57,7 @@
             p {
                 font-size: 16px;
                 line-height: 24px;
-                color: $white;
+                color: $black;
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 600;
                 opacity: 0.5;
@@ -68,7 +68,7 @@
             b {
                 font-size: 24px;
                 line-height: 32px;
-                color: $white;
+                color: $black;
             }
 
 
@@ -78,14 +78,14 @@
                 display: none;
             }
         }
-        .card-oldman {
-            margin-right: 0;
-            background: $white;
+        .card-man:hover,
+        .card-oldman:hover {
+            background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
             p {
-                color: $black;
+                color: $white;
             }
             b {
-                color: $black;
+                color: $white;
             }
             
         }

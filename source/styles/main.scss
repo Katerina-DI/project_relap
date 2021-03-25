@@ -221,6 +221,14 @@
                     width: 70%;
                 }
             }
+            .choiseItem-folow:hover ,
+            .choiseItem-pleasure:hover ,
+            .choiseItem-characteristic:hover ,
+            .choiseItem-something:hover ,
+            .choiseItem-cupidatat:hover ,
+            .choiseItem-promises:hover {
+                transform: scale(1.1);
+            }
         }  
     } 
 }
